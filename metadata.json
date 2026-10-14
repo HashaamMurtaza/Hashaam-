@@ -1,0 +1,6 @@
+{
+  "name": "Luminescent Velocity",
+  "description": "Portfolio and runtime systems laboratory of Muhammad Hashaam Murtaza, Principal Full-Stack & Distributed Systems Engineer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
