@@ -104,6 +104,18 @@ export const ProjectsBento: React.FC<ProjectsBentoProps> = ({ onSelectProject })
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-85 group-hover:opacity-100"
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget as HTMLImageElement;
+                      if (!target.src.includes('/images/')) {
+                        const fallbackName =
+                          project.id === 'apex-velocity'
+                            ? 'apex_velocity_racing_1791360412364.jpg'
+                            : project.id === 'valkyrie-arms'
+                            ? 'valkyrie_tactical_arms_1791360426153.jpg'
+                            : 'distributed_mesh_network_1791358072383.jpg';
+                        target.src = `/images/${fallbackName}`;
+                      }
+                    }}
                   />
                   {/* Scrim Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#090D16] via-transparent to-transparent opacity-80" />

@@ -1,5 +1,11 @@
 import { Project, SkillCategory, ExperienceItem, TelemetryMetric } from '../types';
 
+import maleEngineerPortrait from '../assets/images/male_engineer_portrait_1791358823711.jpg';
+import apexVelocityImg from '../assets/images/apex_velocity_racing_1791360412364.jpg';
+import valkyrieArmsImg from '../assets/images/valkyrie_tactical_arms_1791360426153.jpg';
+import distributedMeshImg from '../assets/images/distributed_mesh_network_1791358072383.jpg';
+import gpuSpatialImg from '../assets/images/gpu_spatial_rendering_1791358084390.jpg';
+
 export const PERSONAL_INFO = {
   name: 'Muhammad Hashaam Murtaza',
   role: 'Principal Systems & Full-Stack Architect',
@@ -10,7 +16,7 @@ export const PERSONAL_INFO = {
   twitter: 'https://x.com',
   linkedin: 'https://linkedin.com',
   bio: 'Specializing in high-performance WebGL/Canvas game simulation, tactical e-commerce architecture, and zero-allocation distributed runtimes. Creator of Apex Velocity 3D and VALKYRIE Arms.',
-  avatar: '/src/assets/images/male_engineer_portrait_1791358823711.jpg',
+  avatar: maleEngineerPortrait,
   stats: [
     { label: 'Cumulative Ingress Throughput', value: '42.8M', unit: 'req/sec' },
     { label: 'Edge Routing Latency (p99)', value: '1.42', unit: 'ms' },
@@ -26,7 +32,7 @@ export const PROJECTS: Project[] = [
     tagline: 'High-performance 3D racing simulator featuring authentic car dynamics, multi-lane AI traffic, and supercar garage customization',
     category: '3D GRAPHICS & SIMULATION',
     categoryLabel: 'WEBGL RACING SIMULATOR',
-    image: '/src/assets/images/apex_velocity_racing_1791360412364.jpg',
+    image: apexVelocityImg,
     featured: true,
     repoUrl: 'https://github.com/HashaamMurtaza/Car-Racing-game',
     liveDemoUrl: 'https://car-racing-game-lake.vercel.app',
@@ -89,7 +95,7 @@ export class VehicleDynamicsController {
     tagline: 'Precision Weaponry & Tactical Gear E-Commerce platform with ballistic telemetry and armory loadout dispatch',
     category: 'FULL-STACK PLATFORM',
     categoryLabel: 'TACTICAL E-COMMERCE',
-    image: '/src/assets/images/valkyrie_tactical_arms_1791360426153.jpg',
+    image: valkyrieArmsImg,
     featured: true,
     repoUrl: 'https://github.com/HashaamMurtaza/Hashaam-weapon-shop',
     liveDemoUrl: 'https://hashaamweaponshop.vercel.app',
@@ -159,7 +165,7 @@ export class ArmoryStore {
     tagline: 'Zero-Allocation WebAssembly distributed state sync with CRDT conflict-free resolution',
     category: 'DISTRIBUTED CONSENSUS',
     categoryLabel: 'SYSTEM PROTOCOL',
-    image: '/src/assets/images/distributed_mesh_network_1791358072383.jpg',
+    image: distributedMeshImg,
     featured: true,
     metrics: [
       { label: 'Throughput', value: '14.8M', sublabel: 'ops/sec per cluster' },
@@ -218,7 +224,7 @@ export class DeltaSyncEngine {
     tagline: 'High-throughput GPU-accelerated spatial telemetry engine & WebGL shader pipeline',
     category: 'GPU COMPUTING',
     categoryLabel: 'WEBGL / WEBGPU ENGINE',
-    image: '/src/assets/images/gpu_spatial_rendering_1791358084390.jpg',
+    image: gpuSpatialImg,
     featured: true,
     metrics: [
       { label: 'Render Budget', value: '120 FPS', sublabel: 'locked frame pacing' },
@@ -275,7 +281,7 @@ fn main(@builtin(global_invocation_id) global_id: vec3<u32>) {
     tagline: 'Microsecond financial event-sourcing with lock-free memory ring buffers',
     category: 'HIGH FREQUENCY SYSTEMS',
     categoryLabel: 'FINANCIAL INFRASTRUCTURE',
-    image: '/src/assets/images/distributed_mesh_network_1791358072383.jpg',
+    image: distributedMeshImg,
     featured: false,
     metrics: [
       { label: 'Deterministic Tick', value: '< 450ns', sublabel: 'p99 order matching' },
@@ -329,7 +335,7 @@ public:
     tagline: 'Multi-region edge computing orchestration with autonomous failover routing',
     category: 'CLOUD INFRASTRUCTURE',
     categoryLabel: 'AUTONOMOUS ROUTING',
-    image: '/src/assets/images/gpu_spatial_rendering_1791358084390.jpg',
+    image: gpuSpatialImg,
     featured: false,
     metrics: [
       { label: 'Global PoPs', value: '74 Zones', sublabel: 'active-active mesh' },

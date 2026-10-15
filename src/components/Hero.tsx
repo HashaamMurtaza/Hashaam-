@@ -133,6 +133,9 @@ export const Hero: React.FC<HeroProps> = ({
                     alt={PERSONAL_INFO.name}
                     className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl object-cover border border-white/[0.15] shadow-md"
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      (e.currentTarget as HTMLImageElement).src = '/images/male_engineer_portrait_1791358823711.jpg';
+                    }}
                   />
                   <span className="absolute -bottom-1 -right-1 p-1 bg-[#090D16] rounded-full">
                     <ShieldCheck className="w-4 h-4 text-[#10B981]" />
